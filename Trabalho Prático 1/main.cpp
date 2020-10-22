@@ -11,8 +11,6 @@ NTE, DESCRESCENTE E ALEATORIA.
 */
 
 
-// teste
-
 #include "cabecalho.hpp"
 #include "acesso_sequencial.hpp"
 #include "arvoreB.hpp"
