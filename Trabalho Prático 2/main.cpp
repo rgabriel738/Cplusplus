@@ -8,8 +8,8 @@
 
 using namespace std;
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
+    
     int metodo = atoi(argv[1]);
     int quantidade = atoi(argv[2]);
     int situacao = atoi(argv[3]);
@@ -17,15 +17,13 @@ int main(int argc, char *argv[])
     Analise *analise1;
     analise1 = inicializaAnalise();
 
-    if (quantidade > 471705 || quantidade < 1)
-    {
+    if (quantidade > 471705 || quantidade < 1){
         cout << "\n\tValor invalido" << endl;
         return 0;
     }
 
     //PRÉ-PROCESSAMENTO
-    if (geraBinario() == 0)
-    {
+    if (geraBinario() == 0){
         return 0;
     }
 
@@ -36,8 +34,8 @@ int main(int argc, char *argv[])
     else
         arqBinarioAleatorio();
 
-    switch (metodo)
-    {
+    switch (metodo){
+            
     case 1:
         cout << "\tIntercalacao balanceada de varios caminhos com ordenacao interna\n " << endl;
         intercalaInterna(analise1, quantidade);
